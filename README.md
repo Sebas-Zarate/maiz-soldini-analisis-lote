@@ -119,4 +119,4 @@ maiz-soldini-analisis-lote/
 ---
 
 **Sebastian Zárate** — Agricultural Data Analyst — Rosario, Argentina.
-GitHub: [@Sebas-Zarate](https://github.com/Sebas-Zarate) · LinkedIn: [TU-LINKEDIN-AQUÍ]
+
