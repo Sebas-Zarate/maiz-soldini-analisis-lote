@@ -1,0 +1,14 @@
+# Análisis (scripts/)
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+geopandas
+shapely>=2.0
+pykrige
+shap
+
+# Dashboard (app.py)
+streamlit
+plotly
