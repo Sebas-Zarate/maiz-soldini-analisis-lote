@@ -78,13 +78,6 @@ KMeans (k = 3, elegido con el método del codo) sobre pH y materia orgánica est
 
 ---
 
-## 🖥️ Dashboard interactivo
-
-`app.py` es un panel en **Streamlit** con 6 pestañas: resumen ejecutivo, mapa de rendimiento, suelo interpolado, clima y agua, modelo (SHAP) y zonas de manejo.
-
-```bash
-streamlit run app.py
-```
 
 ---
 
@@ -114,42 +107,14 @@ maiz-soldini-analisis-lote/
 │   ├── 04_random_forest_shap.py
 │   └── 05_zonificacion_anova.py
 ├── assets/            # imágenes usadas en este README
-├── data/              # datasets de entrada (ver arriba)
-├── outputs/           # resultados generados por los scripts
-├── app.py             # dashboard en Streamlit
 ├── requirements.txt
 └── README.md
 ```
 
-## ▶️ Cómo reproducirlo
-
-```bash
-# 1. Clonar e instalar
-git clone https://github.com/Sebas-Zarate/maiz-soldini-analisis-lote.git
-cd maiz-soldini-analisis-lote
-python -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-
-# 2. Colocar los datasets en data/ y correr los scripts en orden
-python scripts/01_limpieza.py
-python scripts/02_kriging.py
-python scripts/03_balance_hidrico.py
-python scripts/04_random_forest_shap.py
-python scripts/05_zonificacion_anova.py
-
-# 3. Abrir el dashboard
-streamlit run app.py
-```
-
-Los pasos 4 y 5 dependen de la salida del paso 2 (`outputs/cosecha_con_suelo_interpolado.csv`), y el dashboard necesita los resultados de los pasos 2 a 5.
 
 ## 🛠️ Stack
 
 **Python** · pandas · NumPy · SciPy · scikit-learn (Random Forest, KMeans) · **PyKrige** (kriging) · **SHAP** · GeoPandas · Shapely · Matplotlib · **Streamlit** · Plotly
-
-## 🔗 Continuación del proyecto
-
-Este caso trabaja solo con datos tabulares. Su evolución, que suma teledetección (Sentinel-1 y 2), riesgo hídrico, prescripción a dosis variable, estimación de carbono en suelo y análisis económico sobre un lote de trigo, está en [**trigo-oliveros-sig-carbono**](https://github.com/Sebas-Zarate/trigo-oliveros-sig-carbono).
 
 ---
 
